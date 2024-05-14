@@ -1,0 +1,23 @@
+.postContainer{
+    margin: 12px;
+    .activePost{
+        background: rgb(245 245 245);
+        padding: 20px;
+        margin-top: -12px;
+        margin-left: -20px;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+        font-size: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+    .cardContainer{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-gap: 10px;
+        position: relative;
+        top: 70px;
+        height: calc(100vh - 90px);
+        overflow: auto;
+    }
+}

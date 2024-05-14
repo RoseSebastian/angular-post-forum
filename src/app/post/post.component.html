@@ -1,0 +1,12 @@
+<div class="card" [ngClass]="{'active': currentPost?.id === postObj?.id}" (click)="onSelection(postObj!)">
+    <div *ngIf="postObj?.id !== currentPost?.id; else activePostObj">
+      <b> Title :</b> {{postObj?.title}}
+    </div>
+    <ng-template #activePostObj>
+      <div *ngFor="let item of currentPost | keyvalue; index as i">
+       <div *ngIf="i == visibleProperty">
+        <b> {{item.key | titlecase}} :</b> {{item.value}}
+       </div>
+      </div>
+    </ng-template>        
+  </div>
