@@ -1,6 +1,6 @@
 # AngularPostForum
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7. This ia an angular app for showcasing each post from an array of Objets in a square matrix.  
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7. This is an angular app for showcasing each post from an array of Objects in a square matrix.  
 The app uses ngrx for state management and unit tests are added.
 
 ## Development server
